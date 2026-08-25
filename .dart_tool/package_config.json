@@ -3,13 +3,13 @@
   "packages": [
     {
       "name": "_fe_analyzer_shared",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-100.0.0",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/_fe_analyzer_shared-93.0.0",
       "packageUri": "lib/",
-      "languageVersion": "3.11"
+      "languageVersion": "3.9"
     },
     {
       "name": "analyzer",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/analyzer-13.0.0",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/analyzer-10.0.1",
       "packageUri": "lib/",
       "languageVersion": "3.9"
     },
@@ -123,7 +123,7 @@
     },
     {
       "name": "dart_style",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/dart_style-3.1.9",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/dart_style-3.1.7",
       "packageUri": "lib/",
       "languageVersion": "3.10"
     },
@@ -201,7 +201,7 @@
     },
     {
       "name": "intl_generator",
-      "rootUri": "file:///Users/tomas/.pub-cache/git/intl_generator-edc16a3161f9e4a434dac3f1aafd18b25f5e2aee/",
+      "rootUri": "file:///Users/tomas/.pub-cache/git/intl_generator-f550ee505e0ccfbcf4c72e68a7f8c03abd56e7a7/",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
@@ -267,7 +267,7 @@
     },
     {
       "name": "mockito",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/mockito-5.7.0",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/mockito-5.6.4",
       "packageUri": "lib/",
       "languageVersion": "3.7"
     },
@@ -513,21 +513,21 @@
     },
     {
       "name": "test",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/test-1.31.2",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/test-1.31.1",
       "packageUri": "lib/",
-      "languageVersion": "3.11"
+      "languageVersion": "3.10"
     },
     {
       "name": "test_api",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/test_api-0.7.13",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/test_api-0.7.12",
       "packageUri": "lib/",
-      "languageVersion": "3.11"
+      "languageVersion": "3.10"
     },
     {
       "name": "test_core",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/test_core-0.6.19",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/test_core-0.6.18",
       "packageUri": "lib/",
-      "languageVersion": "3.11"
+      "languageVersion": "3.10"
     },
     {
       "name": "typed_data",
