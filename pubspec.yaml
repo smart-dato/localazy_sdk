@@ -20,7 +20,7 @@ dependencies:
   http: ">=0.13.0 <2.0.0"
   logger: ^2.0.0
   path: ^1.8.0
-  package_info_plus: ^8.0.0
+  package_info_plus: ^10.2.1
   path_provider: ^2.0.0
   petitparser: ">=4.0.0 <7.0.0"
   shared_preferences: ^2.0.0

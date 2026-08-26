@@ -87,9 +87,9 @@
     },
     {
       "name": "clock",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/clock-1.1.1",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/clock-1.1.2",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.4"
     },
     {
       "name": "code_builder",
@@ -129,9 +129,15 @@
     },
     {
       "name": "ffi",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/ffi-2.1.2",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/ffi-2.2.0",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.7"
+    },
+    {
+      "name": "ffi_leak_tracker",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/ffi_leak_tracker-0.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.10"
     },
     {
       "name": "file",
@@ -147,15 +153,15 @@
     },
     {
       "name": "flutter",
-      "rootUri": "file:///Users/tomas/fvm/versions/3.44.4/packages/flutter",
+      "rootUri": "file:///Users/tomas/flutter/packages/flutter",
       "packageUri": "lib/",
-      "languageVersion": "3.10"
+      "languageVersion": "3.9"
     },
     {
       "name": "flutter_web_plugins",
-      "rootUri": "file:///Users/tomas/fvm/versions/3.44.4/packages/flutter_web_plugins",
+      "rootUri": "file:///Users/tomas/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
-      "languageVersion": "3.10"
+      "languageVersion": "3.9"
     },
     {
       "name": "frontend_server_client",
@@ -177,9 +183,9 @@
     },
     {
       "name": "http",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/http-1.2.2",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/http-1.6.0",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.4"
     },
     {
       "name": "http_multi_server",
@@ -255,7 +261,7 @@
     },
     {
       "name": "meta",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/meta-1.18.0",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/meta-1.17.0",
       "packageUri": "lib/",
       "languageVersion": "3.5"
     },
@@ -285,21 +291,21 @@
     },
     {
       "name": "package_info_plus",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/package_info_plus-8.0.1",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/package_info_plus-10.2.1",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.10"
     },
     {
       "name": "package_info_plus_platform_interface",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/package_info_plus_platform_interface-3.0.1",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/package_info_plus_platform_interface-4.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.10"
     },
     {
       "name": "path",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/path-1.9.0",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/path-1.9.1",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.4"
     },
     {
       "name": "path_provider",
@@ -441,9 +447,9 @@
     },
     {
       "name": "sky_engine",
-      "rootUri": "file:///Users/tomas/fvm/versions/3.44.4/bin/cache/pkg/sky_engine",
+      "rootUri": "file:///Users/tomas/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
-      "languageVersion": "3.10"
+      "languageVersion": "3.9"
     },
     {
       "name": "source_gen",
@@ -561,9 +567,9 @@
     },
     {
       "name": "web",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/web-0.5.1",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/web-1.1.1",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "3.4"
     },
     {
       "name": "web_socket",
@@ -585,9 +591,9 @@
     },
     {
       "name": "win32",
-      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/win32-5.5.3",
+      "rootUri": "file:///Users/tomas/.pub-cache/hosted/pub.dev/win32-6.4.0",
       "packageUri": "lib/",
-      "languageVersion": "3.4"
+      "languageVersion": "3.10"
     },
     {
       "name": "xdg_directories",
@@ -609,8 +615,8 @@
     }
   ],
   "generator": "pub",
-  "generatorVersion": "3.12.2",
-  "flutterRoot": "file:///Users/tomas/fvm/versions/3.44.4",
-  "flutterVersion": "3.44.4",
+  "generatorVersion": "3.11.4",
+  "flutterRoot": "file:///Users/tomas/flutter",
+  "flutterVersion": "3.41.6",
   "pubCache": "file:///Users/tomas/.pub-cache"
 }
