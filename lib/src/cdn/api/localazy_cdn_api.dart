@@ -118,6 +118,48 @@ class LocalazyCdnApi {
     );
   }
 
+  /// Removes cached data for the given [cdnId] from the [cacheFolder].
+  ///
+  /// Without [fileName] and [languageCode], everything cached for the [cdnId]
+  /// is removed, including the remote config.
+  /// When [fileName] and/or [languageCode] are provided, only the matching
+  /// cached translations are removed and the remote config is kept.
+  static Future<void> clearCache({
+    required String cdnId,
+    required String cacheFolder,
+    String? fileName,
+    String? languageCode,
+  }) async {
+    final directory = Directory(cacheFolder);
+
+    if (!await directory.exists()) {
+      return;
+    }
+
+    final prefix = languageCode != null ? '${cdnId}_${languageCode}_' : '${cdnId}_';
+    final suffix = fileName != null ? '_$fileName' : null;
+
+    await for (final entity in directory.list()) {
+      if (entity is! File) {
+        continue;
+      }
+
+      final name = path.basename(entity.path);
+      if (!name.startsWith(prefix)) {
+        continue;
+      }
+      if (suffix != null && !name.endsWith(suffix)) {
+        continue;
+      }
+
+      try {
+        await entity.delete();
+      } catch (ex) {
+        // Ignore files that can't be removed.
+      }
+    }
+  }
+
   static Future<void> _saveInCache({
     required String cdnId,
     required String fileName,

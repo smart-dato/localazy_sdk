@@ -85,3 +85,25 @@ class LocalazyApp extends StatelessWidget {
 </pre>
 
 <br/>
+
+### Clearing the cache
+
+Downloaded translations and the remote config are cached in the `cacheFolder` provided during initialization. The app can clear that cache at any time, for example after a logout or from a debug menu.
+
+<pre>
+// Remove the remote config and all downloaded translations, and drop the ones loaded in memory
+await Localazy.clearCache();
+
+// Remove only the cached translations (all locales of the current file), keeping the remote config
+await Localazy.clearTranslations();
+
+// Remove the cached translations of a single locale / file
+await Localazy.clearTranslations(locale: 'nl', fileName: 'intl.arb');
+
+// Drop the translations loaded in memory without touching the cache
+Localazy.clearLoadedTranslations();
+</pre>
+
+After clearing, the app falls back to the translations bundled with it until `Localazy.updateTranslations()` is called again.
+
+<br/>

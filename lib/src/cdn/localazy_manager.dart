@@ -55,6 +55,11 @@ class LocalazyManager {
 
   static bool get hasReleaseData => config?.messages != null;
 
+  /// Drops the loaded config and translations from memory.
+  static void clear() {
+    config = null;
+  }
+
   static String? getMessage(
     String? locale,
     String? name,

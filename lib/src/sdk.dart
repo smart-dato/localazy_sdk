@@ -99,4 +99,70 @@ class Localazy {
 
     return TranslationsUpdateResult(0, 1);
   }
+
+  /// Removes all cached Localazy data (remote config and downloaded translations)
+  /// and drops the translations that are currently loaded in memory.
+  ///
+  /// After this call the app falls back to the translations bundled with it,
+  /// until [updateTranslations] is called again.
+  ///
+  /// ```
+  /// await Localazy.clearCache();
+  /// await Localazy.updateTranslations();
+  /// ```
+  ///
+  /// Throws [SdkException] in case the SDK has not been initialized.
+  static Future<void> clearCache() async {
+    _assertInitialized();
+
+    await LocalazyCdnApi.clearCache(
+      cdnId: _cdnId!,
+      cacheFolder: _cacheFolder!,
+    );
+
+    LocalazyManager.clear();
+  }
+
+  /// Removes the cached translations from the disk.
+  ///
+  /// By default the translations of every locale of the current file are removed.
+  /// Pass [locale] and/or [fileName] to narrow it down to a specific cached file.
+  /// The cached remote config is kept.
+  ///
+  /// Set [keepLoadedTranslations] to `true` to keep the translations that are
+  /// already loaded in memory active until the next [updateTranslations] call.
+  ///
+  /// Throws [SdkException] in case the SDK has not been initialized.
+  static Future<void> clearTranslations({
+    String? locale,
+    String? fileName,
+    bool keepLoadedTranslations = false,
+  }) async {
+    _assertInitialized();
+
+    await LocalazyCdnApi.clearCache(
+      cdnId: _cdnId!,
+      cacheFolder: _cacheFolder!,
+      fileName: fileName ?? _fileName,
+      languageCode: locale != null ? Intl.shortLocale(locale) : null,
+    );
+
+    if (!keepLoadedTranslations) {
+      LocalazyManager.clear();
+    }
+  }
+
+  /// Drops the translations that are currently loaded in memory without touching the cache.
+  ///
+  /// The app falls back to the translations bundled with it, until
+  /// [updateTranslations] is called again.
+  static void clearLoadedTranslations() {
+    LocalazyManager.clear();
+  }
+
+  static void _assertInitialized() {
+    if (_cdnId == null || _cacheFolder == null) {
+      throw SdkException("Localazy SDK has not been initialized. Please call the 'init' method first.");
+    }
+  }
 }
