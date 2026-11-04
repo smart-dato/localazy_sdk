@@ -15,7 +15,7 @@ class MessageLookupProxy implements MessageLookup {
 
   @override
   void addLocale(String localeName, Function findLocale) {
-    _messageLookup.addLocale(localeName, findLocale);
+    _messageLookup.addLocale(localeName, (String locale) => findLocale(locale) as MessageLookupByLibrary?);
   }
 
   @override
